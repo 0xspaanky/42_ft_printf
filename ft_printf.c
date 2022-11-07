@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 19:57:43 by smounafi          #+#    #+#             */
-/*   Updated: 2022/11/03 21:30:45 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/11/07 09:17:50 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ int	checkconversion(char c, va_list list)
 		count += ft_putnbr(va_arg(list, int));
 	else if (c == 'u')
 		count += ft_putnbr(va_arg(list, unsigned int));
-	else if (c == 'c')
-		count += ft_putchar(va_arg(list, int));
 	else if (c == 's')
 		count += ft_putstr(va_arg(list, char *));
 	else if (c == 'x')
@@ -38,6 +36,8 @@ int	checkconversion(char c, va_list list)
 	}
 	else if (c == '%')
 		count += ft_putchar('%');
+	else
+		count += ft_putchar(c);
 	return (count);
 }
 

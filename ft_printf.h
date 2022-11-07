@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:29:25 by smounafi          #+#    #+#             */
-/*   Updated: 2022/11/03 21:31:53 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/11/06 21:18:47 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 int	ft_putchar(char c);
 int	ft_putnbr(long nb);

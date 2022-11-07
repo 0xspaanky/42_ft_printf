@@ -12,9 +12,6 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
-$(OBJ): $(SRC)
-	$(CC) $(CFLAGS) -c $(SRC)
-
 clean:
 	$(RM) $(OBJ)
 
